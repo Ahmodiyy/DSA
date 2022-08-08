@@ -4,6 +4,6 @@ public class Recursion {
     }
     public static void main(String[] args) {
         Recursion recursion = new Recursion();
-        System.out.println("welcome back to java");
+        System.out.println(recursion.getFibonacci(3));
     }
 }
