@@ -11,6 +11,7 @@ public class Recursion {
     }
     public static void main(String[] args) {
         Recursion recursion = new Recursion();
-        System.out.println(recursion.getFibonacci(3));
+        int fibonacciNthTerm = 10;
+        System.out.println("The " + fibonacciNthTerm +"th fibonacci number is : " + recursion.getFibonacci(fibonacciNthTerm));
     }
 }
