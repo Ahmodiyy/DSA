@@ -1,5 +1,8 @@
 public class Recursion {
     public int getFibonacci(int fibonacciNTerm){
+        if(fibonacciNTerm < 0){
+            return -1;
+        }
         if (fibonacciNTerm == 0 || fibonacciNTerm == 1)
         {
             return fibonacciNTerm;
