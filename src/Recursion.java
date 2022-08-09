@@ -23,6 +23,7 @@ public class Recursion {
         Recursion recursion = new Recursion();
         int fibonacciNthTerm = 10;
         System.out.println("The " + fibonacciNthTerm +"th fibonacci number is : " + recursion.getFibonacci(fibonacciNthTerm));
-        System.out.println(recursion.decimalToBinary(-7));
+        int decimalValue = 56;
+        System.out.println("binary of "+ decimalValue+ "\u2081\u2080 is : " +recursion.decimalToBinary(decimalValue));
     }
 }
