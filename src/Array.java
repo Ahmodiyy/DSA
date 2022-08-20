@@ -8,12 +8,14 @@ public class Array {
     public Array(int[] singleDimensionalArray) {
         this.singleDimensionalArray = singleDimensionalArray;
     }
+
     public void insertIntoSingleDimensionalArray(){
         for (int index = 0; index<singleDimensionalArray.length; index++){
             singleDimensionalArray[index] = new Random().nextInt();
             System.out.println(Arrays.toString(singleDimensionalArray));
         }
     }
+
     public void deleteElementInSingleDimensionalArray(int indexOfElementToDelete){
         try {
             singleDimensionalArray[indexOfElementToDelete] = 0;
@@ -21,10 +23,7 @@ public class Array {
         }
         catch (ArrayIndexOutOfBoundsException e){
             e.printStackTrace();
-
         }
-
-
     }
 
     public void traverseSingleDimensionalArray(){
@@ -32,6 +31,13 @@ public class Array {
             System.out.println(i);
         }
     }
+
+    public void searchSingleDimensionalArray(){
+        for (int i : singleDimensionalArray) {
+            System.out.println(i);
+        }
+    }
+    
     public static void main(String[] args) {
         Array array = new Array(new int[5]);
         array.insertIntoSingleDimensionalArray();
