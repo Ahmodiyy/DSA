@@ -15,14 +15,21 @@ public class Array {
         }
     }
     public void deleteElementInSingleDimensionalArray(int indexOfElementToDelete){
+        try {
             singleDimensionalArray[indexOfElementToDelete] = 0;
             System.out.println(Arrays.toString(singleDimensionalArray));
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+
+        }
+
 
     }
 
     public static void main(String[] args) {
         Array array = new Array(new int[5]);
         array.insertIntoSingleDimensionalArray();
-        array.deleteElementInSingleDimensionalArray(4);
+        array.deleteElementInSingleDimensionalArray(5);
     }
 }
