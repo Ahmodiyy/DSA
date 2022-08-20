@@ -3,10 +3,14 @@ import java.util.Random;
 
 public class Array {
     int[] singleDimensionalArray;
-    int[] twoDimensionalArray;
+    int[][] twoDimensionalArray;
 
     public Array(int[] singleDimensionalArray) {
         this.singleDimensionalArray = singleDimensionalArray;
+    }
+
+    public Array(int[][] twoDimensionalArray) {
+        this.twoDimensionalArray = twoDimensionalArray;
     }
 
     public void insertIntoSingleDimensionalArray(){
@@ -39,10 +43,16 @@ public class Array {
     }
 
     public static void main(String[] args) {
+        //one or single dimensional array and operations
         Array array = new Array(new int[5]);
         array.insertIntoSingleDimensionalArray();
         array.deleteElementInSingleDimensionalArray(4);
         array.traverseSingleDimensionalArray();
         array.searchElementInAnArray(0);
+
+        //two-dimensional array and operation
+        Array table = new Array(new int[5][5]);
+
+
     }
 }
