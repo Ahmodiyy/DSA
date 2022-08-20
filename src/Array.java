@@ -27,9 +27,15 @@ public class Array {
 
     }
 
+    public void traverseSingleDimensionalArray(){
+        for (int index = 0; index<singleDimensionalArray.length; index++){
+            System.out.println(singleDimensionalArray[index]);
+        }
+    }
     public static void main(String[] args) {
         Array array = new Array(new int[5]);
         array.insertIntoSingleDimensionalArray();
         array.deleteElementInSingleDimensionalArray(5);
+        array.traverseSingleDimensionalArray();
     }
 }
