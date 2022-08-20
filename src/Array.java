@@ -32,16 +32,17 @@ public class Array {
         }
     }
 
-    public void searchSingleDimensionalArray(){
+    public void searchElementInAnArray(int elementToSearchFor){
         for (int i : singleDimensionalArray) {
-            System.out.println(i);
+            if (i == elementToSearchFor) System.out.println("found " + elementToSearchFor);
         }
     }
-    
+
     public static void main(String[] args) {
         Array array = new Array(new int[5]);
         array.insertIntoSingleDimensionalArray();
-        array.deleteElementInSingleDimensionalArray(5);
+        array.deleteElementInSingleDimensionalArray(4);
         array.traverseSingleDimensionalArray();
+        array.searchElementInAnArray(0);
     }
 }
