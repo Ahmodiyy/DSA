@@ -14,9 +14,15 @@ public class Array {
             System.out.println(Arrays.toString(singleDimensionalArray));
         }
     }
+    public void deleteElementInSingleDimensionalArray(int indexOfElementToDelete){
+            singleDimensionalArray[indexOfElementToDelete] = 0;
+            System.out.println(Arrays.toString(singleDimensionalArray));
+
+    }
 
     public static void main(String[] args) {
-        Array arrays = new Array(new int[5]);
-        arrays.insertIntoSingleDimensionalArray();
+        Array array = new Array(new int[5]);
+        array.insertIntoSingleDimensionalArray();
+        array.deleteElementInSingleDimensionalArray(4);
     }
 }
