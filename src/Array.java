@@ -28,8 +28,8 @@ public class Array {
     }
 
     public void traverseSingleDimensionalArray(){
-        for (int index = 0; index<singleDimensionalArray.length; index++){
-            System.out.println(singleDimensionalArray[index]);
+        for (int i : singleDimensionalArray) {
+            System.out.println(i);
         }
     }
     public static void main(String[] args) {
