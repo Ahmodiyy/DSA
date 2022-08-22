@@ -20,6 +20,16 @@ public class Array {
         }
     }
 
+    public void insertIntoTwoDimensionalArray(){
+        System.out.println(Arrays.deepToString(twoDimensionalArray));
+        for (int firstIndex = 0; firstIndex<twoDimensionalArray.length; firstIndex++){
+            for(int secondIndex = 0; secondIndex<twoDimensionalArray.length; secondIndex++){
+                twoDimensionalArray[firstIndex][secondIndex] = new Random().nextInt();
+            }
+        }
+        System.out.println(Arrays.deepToString(twoDimensionalArray));
+    }
+
     public void deleteElementInSingleDimensionalArray(int indexOfElementToDelete){
         try {
             singleDimensionalArray[indexOfElementToDelete] = 0;
@@ -51,8 +61,9 @@ public class Array {
         array.searchElementInAnArray(0);
 
         //two-dimensional array and operation
+        System.out.println("Two-dimensional array");
         Array table = new Array(new int[5][5]);
-
+        table.insertIntoTwoDimensionalArray();
 
     }
 }
